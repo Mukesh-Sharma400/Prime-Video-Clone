@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/prime video fevicon.png" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <title>Welcome to Prime Video</title>
   </head>
   <body>
@@ -16,7 +21,54 @@
         /></a>
       </div>
       <div id="rightside">
-        <a href="#">EN</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            EN ▾
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <div class="row">
+              <div class="column">
+                <a href="#">Bahasa Indonesia</a>
+                <a href="#">Bahasa Melayu</a>
+                <a href="#">Dansk</a>
+                <a href="#">Deutsch</a>
+                <a href="#">English</a>
+                <a href="#">Español</a>
+                <a href="#">Français</a>
+                <a href="#">Italiano</a>
+                <a href="#">Magyar</a>
+                <a href="#">Nederlands</a>
+                <a href="#">Norsk</a>
+              </div>
+              <div class="column">
+                <a href="#">Polski</a>
+                <a href="#">Português (Brasil)</a>
+                <a href="#">Português (Portugal)</a>
+                <a href="#">Română</a>
+                <a href="#">Suomi</a>
+                <a href="#">Svenska</a>
+                <a href="#">Türkçe</a>
+                <a href="#">Wikang Filipino</a>
+                <a href="#">Čeština</a>
+                <a href="#">Ελληνικά</a>
+                <a href="#">Русский</a>
+              </div>
+              <div class="column">
+                <a href="#">עברית</a>
+                <a href="#">العربية</a>
+                <a href="#">हिन्दी</a>
+                <a href="#">தமிழ்</a>
+                <a href="#">తెలుగు</a>
+                <a href="#">ไทย</a>
+                <a href="#">日本語</a>
+                <a href="#">简体中文</a>
+                <a href="#">繁體中文</a>
+                <a href="#">한국어</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="#">Sign In</a>
       </div>
     </section>
@@ -28,16 +80,16 @@
           Join Prime to watch the latest movies, TV shows and
           <br />award-winning Amazon Originals
         </p>
-        <a href="#">Login to join Prime</a>
+        <a href="#">Sign in to join Prime</a>
       </div>
     </section>
     <section class="card50">
       <div>
-        <h1>Your favorite channels all in <br />one place</h1>
+        <h1>Your favorite channels all <br />in one place</h1>
         <p>
-          With Prime Video Channels, find shows and movies <br />from your
-          favorite channels all in one place. Enjoy with <br />an add-on
-          subscription to Channels of your choice
+          With Prime Video Channels, find shows and <br />movies from your
+          favorite channels all in one <br />place. Enjoy with an add-on
+          subscription to <br />Channels of your choice
         </p>
       </div>
       <div class="card50cards">
@@ -89,7 +141,6 @@
           access to deals & more.
         </p>
         <a href="#">Get Started</a>
-        <p id="small">*Go to amazon.in/prime for more information</p>
       </div>
     </section>
     <section class="card4">
@@ -104,7 +155,7 @@
         <a href="#">Get Started</a>
       </div>
     </section>
-    <section class="row">
+    <section class="rows">
       <div id="div1">
         <img src="assets/div1.png" alt="Div1" />
         <h2>Watch anywhere</h2>
@@ -153,5 +204,6 @@
         <p>© 1996-2021, Amazon.com, Inc. or its affiliates</p>
       </div>
     </section>
+    <script src="home.js"></script>
   </body>
 </html>

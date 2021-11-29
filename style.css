@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: black;
 }
 .navbar {
@@ -22,7 +22,7 @@ body {
 .navbar a {
   font-size: 1.1rem;
   font-weight: 100;
-  padding-left: 40px;
+  padding-left: 30px;
   color: white;
   text-decoration: none;
 }
@@ -81,7 +81,7 @@ body {
 .card4 a {
   margin-left: 57%;
 }
-.row {
+.rows {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -139,16 +139,16 @@ body {
 }
 .card50cards {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 7px;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
 }
 .card50cards img {
-  height: 111.667px;
-  width: 161.812px;
+  height: 124.219px;
+  width: 180px;
 }
 .card50cards img:hover {
-  box-shadow: 10px 10px 10px rgb(95, 95, 95);
+  box-shadow: 0px 0px 5px 5px rgb(48, 48, 48);
 }
 #div1 h2,
 #div2 h2,
@@ -186,4 +186,91 @@ body {
 .footer #foottext a {
   text-decoration: none;
   color: #0f79af;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding-bottom: 10px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #323e4c;
+  width: 58%;
+  right: 11%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 340px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* Mega Menu header, if needed */
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  background-color: #323e4c;
+  border-right: 1px black solid;
+}
+
+/* Style links inside the columns */
+.column a {
+  font-size: 17px;
+  line-height: 20px;
+  float: none;
+  color: #c4cacf;
+  padding: 14px 48px 14px 36px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  background-color: rgba(51, 181, 229, 0.4);
+}
+.row {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.show {
+  display: block;
 }
