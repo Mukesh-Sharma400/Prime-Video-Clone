@@ -4,20 +4,25 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  background-color: #072a3a;
+  background-color: #0f171e;
 }
 .navbar {
-  background-color: #072a3a;
+  background-color: #182530;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 80px 15px 40px;
 }
 .navbar a {
-  color: white;
+  color: #c4cacf;
   text-decoration: none;
   margin: 8px;
   font-size: 18px;
+}
+.navbarleft a:nth-child(2) {
+  text-decoration: underline;
+  color: white;
+  text-underline-offset: 5px;
 }
 .navbarleft img {
   height: 40px;
@@ -27,7 +32,7 @@ body {
 .navbarright img {
   height: 32px;
   width: 32px;
-  margin: 0 8px;
+  margin: 0 8px 0 12px;
 }
 .navbarleft {
   display: flex;
@@ -40,7 +45,7 @@ body {
   align-items: center;
 }
 input {
-  background-color: #072a3a;
+  background-color: #17222c;
   outline: none;
   border: 1px gray solid;
   padding: 10px;
@@ -50,7 +55,7 @@ input {
 }
 input:focus {
   border: 1px white solid;
-  background-color: #052635;
+  background-color: #17222c;
 }
 .navbarright .dropdown {
   float: inline-end;
@@ -62,7 +67,7 @@ input:focus {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #c4cacf;
   background-color: inherit;
   font: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -78,15 +83,15 @@ input:focus {
   display: none;
   position: absolute;
   background-color: #323e4c;
-  width: 58%;
-  right: 11%;
+  width: 31%;
+  right: 5%;
+  margin-top: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   max-height: 340px;
   overflow: scroll;
   overflow-x: hidden;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-radius: 4px;
 }
 
 /* Mega Menu header, if needed */
@@ -99,26 +104,41 @@ input:focus {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
-  background-color: #323e4c;
-  border-right: 1px black solid;
+  width: 50%;
+  background-color: #252e38;
+}
+.column:first-child {
+  border-right: 1px #525252 solid;
 }
 
 /* Style links inside the columns */
 .column a {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   float: none;
   color: #c4cacf;
-  padding: 14px 48px 14px 36px;
+  padding: 10px 10px 0px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
+.column img {
+  margin: 0 8px 0 0px;
+}
+.column span {
+  font-weight: 100;
+  font-size: 30px;
+  padding: 6px 7px 7px 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+}
 /* Add a background color on hover */
 .column a:hover {
-  background-color: rgba(51, 181, 229, 0.4);
+  color: white;
 }
 .row {
   background-color: white;
@@ -153,16 +173,18 @@ input:focus {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0;
+  height: 224px;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 35px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* Position the "next button" to the right */
@@ -172,9 +194,19 @@ input:focus {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+.prev:hover {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(22, 22, 22)
+  );
+}
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(22, 22, 22)
+  );
 }
 
 /* Caption text */
@@ -240,17 +272,24 @@ input:focus {
   }
 }
 div.scrollmenu {
-  background-color: #072a3a;
+  background-color: #0f171e;
   overflow: auto;
   white-space: nowrap;
 }
-.cards h3 {
-  margin: 1rem 0rem 0rem 2rem;
+.cards h3,
+.langcards h3 {
+  margin: 2rem 0rem 0rem 3rem;
   color: white;
 }
 .cards .scrollmenu img {
-  height: 160px;
-  width: 285px;
+  height: 150px;
+  width: 270px;
+  border-radius: 5px;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+.langcards .scrollmenu img {
+  height: 137px;
+  width: 138px;
   border-radius: 5px;
   margin: 0rem 0.5rem 0rem 0rem;
 }
@@ -261,7 +300,7 @@ div.scrollmenu a {
   color: rgb(0, 183, 255);
 }
 div.scrollmenu a:first-child {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 .cards .scrollmenu img:hover {
   outline: 2px rgb(0, 183, 255) solid;
@@ -276,12 +315,12 @@ div.scrollmenu a:first-child {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #072a3a;
+  background: #0f171e;
   border-radius: 5px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #072a3a;
+  background: #0f171e;
   border-radius: 5px;
 }
 /* Handle on hover */
