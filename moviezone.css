@@ -12,6 +12,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 80px 15px 40px;
+  position: fixed;
+  width: 92vw;
+  z-index: 1;
 }
 .navbar a {
   color: #c4cacf;
@@ -23,6 +26,9 @@ body {
   text-decoration: underline;
   color: white;
   text-underline-offset: 5px;
+}
+.navbarleft a:hover {
+  color: white;
 }
 .navbarleft img {
   height: 40px;
@@ -76,20 +82,20 @@ input:focus {
 /* Add a red background color to navbar links on hover */
 .navbarright .dropdown:hover .dropbtn {
   cursor: pointer;
+  color: white;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #323e4c;
+  background-color: #252e38;
   width: 31%;
   right: 5%;
   margin-top: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  max-height: 340px;
-  overflow: scroll;
+  height: max-content;
   overflow-x: hidden;
   border-radius: 4px;
 }
@@ -125,6 +131,9 @@ input:focus {
   flex-direction: row;
   align-items: center;
 }
+.column a:last-child {
+  padding-bottom: 10px;
+}
 .column img {
   margin: 0 8px 0 0px;
 }
@@ -155,6 +164,9 @@ input:focus {
 }
 .show {
   display: block;
+}
+.space {
+  height: 4.4rem;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -276,9 +288,13 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
-.cards h3,
-.langcards h3 {
+#firstcards h3 {
   margin: 2rem 0rem 0rem 3rem;
+}
+.cards h3,
+.langcards h3,
+.wot h3 {
+  margin: 0.5rem 0rem 0rem 3rem;
   color: white;
 }
 .cards .scrollmenu img {
@@ -290,6 +306,12 @@ div.scrollmenu {
 .langcards .scrollmenu img {
   height: 137px;
   width: 138px;
+  border-radius: 5px;
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+.wot .scrollmenu img {
+  height: 187px;
+  width: 431px;
   border-radius: 5px;
   margin: 0rem 0.5rem 0rem 0rem;
 }
@@ -328,6 +350,22 @@ div.scrollmenu a:first-child {
   background: rgba(88, 88, 88, 0.5);
   border-radius: 5px;
 }
-::-webkit-scrollbar:vertical {
+/* ::-webkit-scrollbar:vertical {
   display: none;
+} */
+.footer {
+  text-align: center;
+  color: #8197a4;
+  margin: 20px 0 25px 0;
+}
+.footer img {
+  width: 107px;
+  height: 32px;
+}
+#footerlinks a {
+  color: #79b8f3;
+  text-decoration: none;
+}
+#footerlinks a:hover {
+  color: #90dffe;
 }
