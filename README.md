@@ -19,7 +19,7 @@ To run the Prime Video Clone locally, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/prime-video-clone.git
+   git clone https://github.com/Mukesh-Sharma400/Prime-Video-Clone.git
    ```
 
 2. Start the Live Server from the VS Code Extensions.
